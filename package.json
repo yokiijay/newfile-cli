@@ -1,0 +1,8 @@
+{
+  "name": "newfile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "./bin/newfile.js",
+  "description": "'newfile ./folder/file.js then cd', 👈 newfile can do more like this!",
+  "license": "MIT"
+}

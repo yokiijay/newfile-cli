@@ -1,14 +1,14 @@
 #!/usr/bin/env node
 const program = require('commander')
-const colors = require('colors')
-const signale = require('signale')
-const execa = require('execa')
-const childProcess = require('child_process')
-const { version, description } = require('../package.json')
+const pkg = require('../package.json')
 
 program
-  .version(version)
-  .description(description)
-  .usage('[filepath] then [commands...]')
+  .version(pkg.version)
+  .description(pkg.description)
+  .arguments('<filepath>')
+  .command('then [cmds...]', 'commands to run after created file')
+  .action((out, cmds)=>{
+    console.log( out, cmds )
+  })
 
 program.parse(process.argv)

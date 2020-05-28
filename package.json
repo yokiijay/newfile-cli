@@ -17,6 +17,7 @@
     "commander": "^5.1.0",
     "execa": "^4.0.2",
     "inquirer": "^7.1.0",
-    "signale": "^1.4.0"
+    "signale": "^1.4.0",
+    "yargs": "^15.3.1"
   }
 }

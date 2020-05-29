@@ -35,8 +35,8 @@ const argv = yargs
 async function main(){
   // newfile输出help
   if(!argv._.length){
-    // yargs
-    //   .showHelp()
+    yargs
+      .showHelp()
   }
   // newfile ...
   if(argv._.length >= 1){

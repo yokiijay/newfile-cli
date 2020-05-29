@@ -2,10 +2,15 @@
   "name": "newfile-cli",
   "version": "1.0.0",
   "main": "index.js",
+  "author": {
+    "email": "yokiijay@gmail.com",
+    "name": "yokiijay",
+    "url": "https://yokiijay.github.io"
+  },
   "bin": {
     "newfile": "./bin/newfile.js"
   },
-  "description": "'newfile folder/file.js then cd'  👈👈👈 newfile-cli can do more like this!",
+  "description": "'newfile folder/file.js then cd'  👈👈👈 newfile-cli can do more like this! 🌞🌈 Create a file or folder recursively then do something at once ~",
   "keywords": [
     "newfile",
     "cli",

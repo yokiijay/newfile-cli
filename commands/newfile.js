@@ -1,5 +1,4 @@
 const fs = require('fs-extra')
-const path = require('path')
 const colors = require('colors')
 const {Signale} = require('signale')
 const signale = new Signale({

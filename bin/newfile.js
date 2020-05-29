@@ -1,20 +1,8 @@
 #!/usr/bin/env node
-// const program = require('commander')
-// const pkg = require('../package.json')
+const yargs = require('yargs')
+const newfile = require('../commands/newfile')
 
-// program
-//   .version(pkg.version)
-//   .description(pkg.description)
-//   .arguments('<filepath>')
-//   .command('then [cmd]', 'commands to run after created file')
-//   .action((out, cmd)=>{
-//     console.log( out, cmd )
-//   })
-
-// program.parse(process.argv)
-
-
-const argv = require('yargs')
+const argv = yargs
   .usage(`
 🌞🌈 Do something after created file~
 
@@ -32,4 +20,12 @@ Usage:
   .boolean(['then'])
   .argv
 
-console.log( argv )
+
+if(argv._.includes('then')){
+  console.log( 'then commands', argv._ )
+}else if(argv._.length === 1){
+  newfile(argv._[0])
+}else if(!argv._.length){
+  yargs
+    .showHelp()
+}

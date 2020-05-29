@@ -18,6 +18,7 @@
     "colors": "^1.4.0",
     "commander": "^5.1.0",
     "execa": "^4.0.2",
+    "fs-extra": "^9.0.0",
     "inquirer": "^7.1.0",
     "meow": "^7.0.1",
     "signale": "^1.4.0",

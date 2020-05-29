@@ -1,9 +1,8 @@
 # newfile-cli
- 'newfile ./folder/file.js then cd', 👈 newfile can do more like this!
+`newfile folder/file.js then cd`  👈 newfile can do more like this!
  ---
 
 🌞🌈 Create a file or folder recursively then do something at once ~
----
 
 ## Quick Use
 ```

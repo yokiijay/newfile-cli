@@ -35,14 +35,14 @@ const newfile = async (filepath)=>{
     const timeStart = new Date().getMilliseconds()
 
     // 检查文件
-    const isFile = path.extname(filepath) ? true : false
+    const isFile = filepath.match(/[^\/]+(?!.*\/)/) // 最后结尾不是反斜杠/则为文件
     const fileExist = isFile && await fs.pathExists(filepath)
     
     // confirm重复文件
     await handleFileExist(fileExist)
     
     // 创建文件
-    await fs.ensureDir(path.dirname(filepath)) // 目录
+    await fs.ensureDir(filepath.replace(/[^\/]+(?!.*\/)/, '')) // 目录
     if(isFile) await fs.writeFile(filepath, '') // 文件
 
     // 记录时间 end

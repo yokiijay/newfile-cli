@@ -4,6 +4,8 @@
 
 🌞🌈 Create a file or folder recursively then do something at once ~
 
+![render.gif](https://i.loli.net/2020/05/31/1MNheGR9oVYk6J4.gif)
+
 ## Quick Use
 ```
 $ npx newfile-cli src/index.js then cd

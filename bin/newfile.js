@@ -27,8 +27,8 @@ const argv = yargs
   }, argv=>{
     console.log( argv )
   })
-  .alias('h', 'help')
-  .alias('v', 'version')
+  // .alias('h', 'help')
+  // .alias('v', 'version')
   // .boolean(['then'])
   .argv
 

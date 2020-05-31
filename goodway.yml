@@ -5,7 +5,7 @@ config:
   # like `/bin/bash -l`, `ls`, or any other commands
   # the default is bash for Linux
   # or powershell.exe for Windows
-  command: bash -l
+  command: zsh
   
   # Specify the current working directory path
   # the default is the current working directory path
@@ -18,12 +18,12 @@ config:
   # Explicitly set the number of columns
   # or use `auto` to take the current
   # number of columns of your shell
-  cols: 152
+  cols: 60
   
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 13
+  rows: 15
   
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -33,7 +33,7 @@ config:
   
   # Quality
   # 1 - 100
-  quality: 100
+  quality: 60
   
   # Delay between frames in ms
   # If the value is `auto` use the actual recording delays
@@ -49,10 +49,10 @@ config:
   # To hide the title use the value null
   # Don't forget to add a backgroundColor style with a null as type
   frameBox:
-    type: floating
-    title: Terminalizer
+    type: solid
+    title: 💻Good Way
     style:
-      border: 0px black solid
+      border: 4px springgreen solid
       # boxShadow: none
       # margin: 0px
   
@@ -111,35 +111,85 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 517
-    content: "\e[?1034hMacbook:newfile-cli yokiijay$ "
-  - delay: 5791
-    content: e
-  - delay: 336
-    content: "\b\e[K"
-  - delay: 629
-    content: h
-  - delay: 80
-    content: e
-  - delay: 202
-    content: l
-  - delay: 119
-    content: l
-  - delay: 222
-    content: o
-  - delay: 115
-    content: ' '
-  - delay: 107
+  - delay: 648
+    content: "\e]2;yokiijay@Macbook: ~/Code/newfile-cli\a\e]1;..e/newfile-cli\a"
+  - delay: 29
+    content: "\r\e[0m\e[27m\e[24m\e[J \e[36mnewfile-cli\e[00m \e[01;34m\e[31mmaster\e[34m \e[33m✗\e[00m \e[01;32m➜ \e[K\e[?1h\e=\e[?2004h"
+  - delay: 1328
+    content: 'n'
+  - delay: 49
+    content: "\bne"
+  - delay: 58
     content: w
-  - delay: 130
-    content: o
-  - delay: 41
-    content: r
-  - delay: 115
+  - delay: 173
+    content: f
+  - delay: 74
+    content: i
+  - delay: 196
     content: l
-  - delay: 98
+  - delay: 106
+    content: e
+  - delay: 243
+    content: ' '
+  - delay: 478
+    content: s
+  - delay: 219
+    content: r
+  - delay: 280
+    content: c
+  - delay: 67
+    content: /
+  - delay: 213
     content: d
-  - delay: 372
-    content: "\b\b\b\b\b\b\b\b\b\b\b\e[K"
-  - delay: 868
-    content: "logout\r\n"
+  - delay: 39
+    content: e
+  - delay: 121
+    content: m
+  - delay: 61
+    content: o
+  - delay: 690
+    content: /
+  - delay: 667
+    content: h
+  - delay: 88
+    content: e
+  - delay: 157
+    content: l
+  - delay: 133
+    content: l
+  - delay: 244
+    content: o
+  - delay: 937
+    content: ' '
+  - delay: 177
+    content: t
+  - delay: 83
+    content: h
+  - delay: 79
+    content: e
+  - delay: 78
+    content: 'n'
+  - delay: 67
+    content: ' '
+  - delay: 165
+    content: c
+  - delay: 89
+    content: d
+  - delay: 307
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;newfile src/demo/hello then cd\a\e]1;newfile\a"
+  - delay: 516
+    content: "\e[32m\U0001F44F \e[39m \e[32m\e[4m已创建:\e[24m     \e[39m \e[7m\e[32msrc/demo/hello\e[39m\e[27m\e[90m    仅 0.004s\r\n\e[39m\r\n"
+  - delay: 51
+    content: "\e[33m⚠ \e[39m \e[33m\e[4mwarning\e[24m  \e[39m \e[90m\r\n\"cd [command]\" has no promission to use \U0001F62D\r\nBut you can paste the command \"cd src/demo\" in shell, it's already copied! \U0001F44F\r\n\e[39m\r\n\e[32m✔ \e[39m \e[32m\e[4msuccess\e[24m  \e[39m Copied \"cd src/demo\"\r\n"
+  - delay: 58
+    content: "\e]2;yokiijay@Macbook: ~/Code/newfile-cli\a\e]1;..e/newfile-cli\a"
+  - delay: 33
+    content: "\r\e[0m\e[27m\e[24m\e[J \e[36mnewfile-cli\e[00m \e[01;34m\e[31mmaster\e[34m \e[33m✗\e[00m \e[01;32m➜ \e[K\e[?1h\e=\e[?2004h"
+  - delay: 828
+    content: "\e[7mcd src/demo\e[27m"
+  - delay: 313
+    content: "\e[11D\e[27mc\e[27md\e[27m \e[27ms\e[27mr\e[27mc\e[27m/\e[27md\e[27me\e[27mm\e[27mo\e[?1l\e>\e[?2004l\r\r\n\e]2;cd src/demo\a\e]1;cd\a\e]2;yokiijay@Macbook: ~/Code/newfile-cli/src/demo\a\e]1;..-cli/src/demo\a"
+  - delay: 41
+    content: "\r\e[0m\e[27m\e[24m\e[J \e[36mdemo\e[00m \e[01;34m\e[31mmaster\e[34m \e[33m✗\e[00m \e[01;32m➜ \e[K\e[?1h\e=\e[?2004h"
+  - delay: 1427
+    content: "\e[?2004l\r\r\n"

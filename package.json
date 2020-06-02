@@ -24,6 +24,7 @@
   ],
   "license": "MIT",
   "dependencies": {
+    "clipboardy": "^2.3.0",
     "colors": "^1.4.0",
     "commander": "^5.1.0",
     "execa": "^4.0.2",

@@ -31,14 +31,14 @@ const then = async ()=>{
   if(method === 'then'){
 
     if(cmds.includes('cd')) {
-      clipboardy.writeSync(`cd ${path.dirname(filepath)}`)
+      clipboardy.writeSync(`cd ${filepath.split('/').slice(-2,-1)[0]}`)
       signale.warn(
 `
 "cd [command]" has no promission to use 😭
-But you can paste the command "cd ${path.dirname(filepath)}" in shell, it's already copied! 👏
+But you can paste the command "cd ${filepath.split('/').slice(-2,-1)[0]}" in shell, it's already copied! 👏
 `.gray  
       )
-      signale.success(`Copied "cd ${path.dirname(filepath)}"`)
+      signale.success(`Copied "cd ${filepath.split('/').slice(-2,-1)[0]}"`)
     }
 
     const execCmds = cmds.reduce((total,val,index)=>{

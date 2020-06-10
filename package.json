@@ -1,7 +1,7 @@
 {
   "name": "newfile-cli",
-  "version": "1.0.3",
-  "main": "index.js",
+  "version": "1.0.4",
+  "main": "bin/newfile.js",
   "author": {
     "email": "yokiijay@gmail.com",
     "name": "yokiijay",
